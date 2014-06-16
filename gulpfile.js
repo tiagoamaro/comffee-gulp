@@ -7,9 +7,12 @@
 
 var gulp = require('gulp');
 
+var plumber = require('gulp-plumber');
 var coffee = require('gulp-coffee');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
+
+var gutil = require('gulp-util');
 
 var rimraf = require('rimraf');
 
@@ -25,7 +28,9 @@ gulp.task('clean', function(cb){
 
 gulp.task('scripts', ['clean'], function() {
   // Minify and copy all JavaScript
+
   return gulp.src(paths.scripts)
+    .pipe(plumber())
     .pipe(coffee())
     .pipe(uglify())
     .pipe(concat('all.min.js'))

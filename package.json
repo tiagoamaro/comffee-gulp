@@ -1,0 +1,30 @@
+{
+  "name": "comffee-gulp",
+  "description": "Gulp, SCSS, CoffeScript and Compass united",
+  "version": "0.1.0",
+  "author": "Tiago Amaro",
+  "homepage": "http://www.tiagoamaro.com.br",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tiagoamaro/comffee-gulp"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
+    }
+  ],
+  "keywords": [
+    "scss",
+    "compass",
+    "coffe"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.8.0",
+    "gulp-coffee": "^2.0.1",
+    "gulp-concat": "^2.2.0",
+    "gulp-uglify": "^0.3.0",
+    "rimraf": "^2.2.8"
+  }
+}

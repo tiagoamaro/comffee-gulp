@@ -54,7 +54,6 @@ gulp.task('compass', function(){
       image: 'images',
       comments: false,
       bundle_exec: true,
-      image: 'images',
       require: ['bootstrap-sass']
     }))
     .pipe(concat('all.min.css'))

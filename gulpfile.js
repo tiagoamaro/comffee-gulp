@@ -56,8 +56,8 @@ gulp.task('compass', function(){
       bundle_exec: true,
       require: ['bootstrap-sass']
     }))
-    .pipe(concat('all.min.css'))
     .pipe(minifycss())
+    .pipe(concat('all.min.css'))
     .pipe(gulp.dest('build/css'));
 });
 
